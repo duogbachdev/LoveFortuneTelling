@@ -1,0 +1,140 @@
+@media screen and (min-width:800px){
+    *{
+        padding: 0px;
+        margin: 0px auto;
+    }
+    body,html{
+        background-color:rgb(182, 45, 45);
+        min-height: 100vh;
+    }
+    header img{
+        width:30vw;
+        margin-top:3vh ;
+        display: block;
+    }
+    main {
+        display:flex;
+        align-items:center;
+    }
+    .request{
+        width: 18vw;
+        height: 18vw;
+        margin:0 13vw;
+        border: 2vw solid peru;
+        display: flex;
+        align-items:center;
+        background-color:azure;
+    }
+    .request{
+        font-size:7vw;
+    }
+    .request p{
+        text-align: center;
+    }
+    .hopque{
+        display:flex;
+        align-items:center;
+    }
+    .hopque img{
+        width: 10vw;
+        display:inline-block;
+        margin-left:0px;
+        transform: translateX(-50%);
+        margin-top: 10vh ;
+        margin-bottom:10vh;
+        animation: lac .7s linear 0s infinite;
+        cursor: pointer;
+    }
+    .hopque img:hover{
+        animation-duration: .1s;
+    }
+    .caption {
+        width: 35vw;
+        display:flex;
+        align-items: center;
+        transform: translateX(-4vw)
+    }
+    .caption i{
+        font-size:4vw;
+        color:antiquewhite;
+    }
+    .caption span {
+        font-size:2.3vw;
+        font-weight:bold;
+        font-family: 'Courier New', Courier, monospace;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:799px) {
+    *{
+        padding: 0px;
+        margin: 0px auto;
+    }
+    body,html{
+        background-color:rgb(182, 45, 45);
+        min-height: 100vh;
+    }
+    header img{
+        width: 80%;
+        display:block;
+    }
+    .request{
+        width: 60vw;
+        height: 20vw;
+        background-color:beige;
+        border: 3vw solid peru;
+        display: flex;
+        align-items:center;
+        font-size:15vw;
+        margin:1vh auto;
+    }
+    .request p{
+    text-align: center;
+    }
+    .hopque img {
+        width:30%;
+        display: block;
+        animation: lac2 .7s linear 0s infinite;
+        cursor: pointer;
+    }
+    .hopque img:hover{
+        animation-duration: .1s;
+    }
+    .caption{
+        margin-top:7vh;
+        text-align: center;
+        color: white;
+    }
+    .caption i{
+        display: block;
+        width: 7vw;
+        transform: rotate(90deg);
+        font-size: 7vw
+    }
+    .caption span{
+        display: block;
+        font-family: 'Courier New', Courier, monospace;
+        font-size:5vw;
+        font-weight: bold;
+        margin-bottom: 5vh;
+    }
+}
+/* Khai bao chuoi chuyen dong */
+@keyframes lac{
+    0%{}
+    50%{
+        transform: translate(-50%,-4vh)
+    }
+    100%{
+        transform: translate(-50%);
+    }
+}
+@keyframes lac2{
+    0%{}
+    50%{
+        transform: translateY(+4vh)
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
